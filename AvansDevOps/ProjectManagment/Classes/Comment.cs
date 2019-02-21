@@ -9,7 +9,17 @@ namespace ProjectManagment
 {
     class Comment
     {
+        public string content;
+        public DateTime creationDate;
         private Member poster;
         private List<Comment> subComments;
+
+        public Comment(string content, Member poster)
+        {
+            this.content = content;
+            this.poster = poster;
+
+            creationDate = DateTime.Now;
+        }
     }
 }

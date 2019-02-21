@@ -10,7 +10,8 @@ namespace ProjectManagment.Classes
     class Member
     {
         // In this context meaning communication platforms
-        private List<IPlatform> platforms;
-        private string name;
+        public List<IPlatform> platforms;
+        public string name;
+        public int id;
     }
 }

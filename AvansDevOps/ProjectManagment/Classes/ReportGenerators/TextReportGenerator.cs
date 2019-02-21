@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using ProjectManagment.Interfaces;
 
-namespace ProjectManagment.Classes
+namespace ProjectManagment.Classes.ReportGenerators
 {
-    class PDFReportGenerator : IReportGenerator
+    class TextReportGenerator : IReportGenerator
     {
         public void GenerateReport(Sprint sprint)
         {

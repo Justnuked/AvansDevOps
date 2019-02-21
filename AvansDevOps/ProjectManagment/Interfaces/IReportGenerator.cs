@@ -8,7 +8,7 @@ namespace ProjectManagment.Interfaces
 {
     interface IReportGenerator
     {
-        void GenerateReport(ISprint sprint);
+        void GenerateReport(Sprint sprint);
         void GenerateReport(Project project);
     }
 }

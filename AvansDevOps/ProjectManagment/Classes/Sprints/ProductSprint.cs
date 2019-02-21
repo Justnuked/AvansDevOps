@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace ProjectManagment.Classes
 {
-    class ProductSprint : ISprint
+    public class ProductSprint : Sprint
     {
-        public ReviewDocument GetDocument()
+        public ProductSprint(DateTime start, DateTime end) : base(start, end)
         {
-            throw new NotImplementedException();
         }
     }
 }
