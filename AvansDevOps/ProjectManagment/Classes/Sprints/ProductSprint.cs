@@ -8,5 +8,9 @@ namespace ProjectManagment.Classes
 {
     class ProductSprint : ISprint
     {
+        public ReviewDocument GetDocument()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

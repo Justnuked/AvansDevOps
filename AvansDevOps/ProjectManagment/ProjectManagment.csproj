@@ -41,8 +41,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Backlog.cs" />
+    <Compile Include="Classes\BacklogItem.cs" />
+    <Compile Include="Classes\Comment.cs" />
+    <Compile Include="Classes\Forum.cs" />
+    <Compile Include="Classes\Member.cs" />
+    <Compile Include="Classes\ReportGenerators\PDFReportGenerator.cs" />
+    <Compile Include="Classes\Platforms\PlatformOutlook.cs" />
+    <Compile Include="Classes\Platforms\PlatformSkype.cs" />
+    <Compile Include="Classes\Sprints\ProductSprint.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Classes\Project.cs" />
+    <Compile Include="Classes\Sprints\ReleaseSprint.cs" />
+    <Compile Include="Classes\ReviewDocument.cs" />
+    <Compile Include="Classes\States\StateDoing.cs" />
+    <Compile Include="Classes\States\StateDone.cs" />
+    <Compile Include="Classes\States\StateToDo.cs" />
+    <Compile Include="Interfaces\IPlatform.cs" />
+    <Compile Include="Interfaces\IReportGenerator.cs" />
+    <Compile Include="Interfaces\ISprint.cs" />
+    <Compile Include="Interfaces\IState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Thread.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
