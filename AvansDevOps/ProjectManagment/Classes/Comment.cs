@@ -16,6 +16,8 @@ namespace ProjectManagment
 
         public Comment(string content, Member poster)
         {
+            subComments = new List<Comment>();
+
             this.content = content;
             this.poster = poster;
 

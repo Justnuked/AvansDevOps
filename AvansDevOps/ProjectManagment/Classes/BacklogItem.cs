@@ -9,9 +9,20 @@ namespace ProjectManagment.Classes
 {
     class BacklogItem
     {
+        private string description;
         private HashSet<BacklogItem> subItems;
         private IState state;
         private Member developer;
+
+        public BacklogItem(string description)
+        {
+            this.description = description;
+        }
+
+        public void SetMember(Member dev)
+        {
+            this.developer = dev;
+        }
 
         public void AddSubItem(BacklogItem item)
         {

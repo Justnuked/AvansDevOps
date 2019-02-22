@@ -12,10 +12,13 @@ namespace ProjectManagment
         protected DateTime start;
         protected DateTime end;
 
+        public bool active;
+
         private ReviewDocument document;
 
         public Sprint()
         {
+            active = false;
         }
 
         public Sprint(DateTime start, DateTime end)
@@ -27,6 +30,11 @@ namespace ProjectManagment
         public ReviewDocument GetDocument()
         {
             return document;
+        }
+
+        public void Start()
+        {
+            active = true;
         }
     }
 }
