@@ -10,7 +10,6 @@ namespace ProjectManagment
     class Forum
     {
         private List<Thread> threads;
-
         public void CreateThread(string name, string content, BacklogItem item)
         {
             Thread t = new Thread(name, content, item);

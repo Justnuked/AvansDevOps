@@ -18,21 +18,21 @@ namespace ProjectManagment.Classes
             Developer,
             ProjectManager
         }
-
-        private Role role;
-
-        public Member(string name, string role)
+        private HashSet<Role> roles;
+        public Member(string name)
         {
             this.name = name;
-
+        }
+        public void AddRole(string role)
+        {
             switch (role)
             {
                 case "developer":
-                    this.role = Role.Developer;
+                    roles.Add(Role.Developer);
                     break;
 
                 case "projectmanager":
-                    this.role = Role.ProjectManager;
+                    roles.Add(Role.ProjectManager);
                     break;
 
                 default:

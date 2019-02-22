@@ -9,8 +9,17 @@ namespace ProjectManagment.Classes
 {
     class BacklogItem
     {
-        private List<BacklogItem> subItems;
+        private HashSet<BacklogItem> subItems;
         private IState state;
         private Member developer;
+
+        public void AddSubItem(BacklogItem item)
+        {
+            subItems.Add(item);
+        }
+        public void RemoveSubItem(BacklogItem item)
+        {
+            subItems.Remove(item);
+        }
     }
 }
