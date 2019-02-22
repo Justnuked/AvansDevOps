@@ -11,5 +11,6 @@ namespace ProjectManagment.Classes
     {
         private List<BacklogItem> subItems;
         private IState state;
+        private Member developer;
     }
 }

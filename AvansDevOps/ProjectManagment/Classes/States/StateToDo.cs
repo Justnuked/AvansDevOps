@@ -9,5 +9,14 @@ namespace ProjectManagment.Classes
 {
     class StateToDo : IState
     {
+        public void Progress()
+        {
+            // Set to Doing
+        }
+
+        public void SetBack()
+        {
+            // Nothing happens
+        }
     }
 }

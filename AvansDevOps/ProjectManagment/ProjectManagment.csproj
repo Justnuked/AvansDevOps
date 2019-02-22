@@ -49,6 +49,7 @@
     <Compile Include="Classes\ReportGenerators\PDFReportGenerator.cs" />
     <Compile Include="Classes\Platforms\PlatformOutlook.cs" />
     <Compile Include="Classes\Platforms\PlatformSkype.cs" />
+    <Compile Include="Classes\ReportGenerators\TextReportGenerator.cs" />
     <Compile Include="Classes\Sprints\ProductSprint.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Classes\Project.cs" />

@@ -13,5 +13,32 @@ namespace ProjectManagment.Classes
         public List<IPlatform> platforms;
         public string name;
         public int id;
+        private enum Role
+        {
+            Developer,
+            ProjectManager
+        }
+
+        private Role role;
+
+        public Member(string name, string role)
+        {
+            this.name = name;
+
+            switch (role)
+            {
+                case "developer":
+                    this.role = Role.Developer;
+                    break;
+
+                case "projectmanager":
+                    this.role = Role.ProjectManager;
+                    break;
+
+                default:
+                    // Error logic
+                    break;
+            }
+        }
     }
 }

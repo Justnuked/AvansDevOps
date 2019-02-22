@@ -21,5 +21,10 @@ namespace ProjectManagment
 
             creationDate = DateTime.Now;
         }
+
+        public void AddSubComment(Comment comment)
+        {
+            subComments.Add(comment);
+        }
     }
 }
