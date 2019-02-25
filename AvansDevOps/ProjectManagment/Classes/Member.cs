@@ -7,7 +7,7 @@ using ProjectManagment.Interfaces;
 
 namespace ProjectManagment.Classes
 {
-    class Member
+    public class Member
     {
         // In this context meaning communication platforms
         public List<IPlatform> platforms;

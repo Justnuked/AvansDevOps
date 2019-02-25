@@ -10,18 +10,28 @@ namespace PipeLine.Classes
 {
     public class Pipeline : Observable
     {
+        public enum PipeLineType{
+            RELEASE, DEVELOPMENT
+        };
         private List<IPipeLineModule> modules;
-        string name;
+        private string name;
+        private PipeLineType type;
 
-        public Pipeline(string name)
+        public Pipeline(string name, PipeLineType type)
         {
             modules = new List<IPipeLineModule>();
             this.name = name;
+            this.type = type;
         }
 
         public void AddModule(IPipeLineModule module)
         {
             modules.Add(module);
+        }
+
+        public PipeLineType GetPipeLineType()
+        {
+            return this.type;
         }
 
         public void RemoveModule(IPipeLineModule module)
@@ -51,14 +61,12 @@ namespace PipeLine.Classes
 
             if (failedModule == null)
             {
-                Notify("Pipeline completed with succes");
+                Notify("Pipeline completed with succes", true);
             }
             else
             {
-                Notify("Module " + failedModule.ToString() + " has failed");
+                Notify("Module " + failedModule.ToString() + " has failed", false);
             }
         }
-
-
     }
 }

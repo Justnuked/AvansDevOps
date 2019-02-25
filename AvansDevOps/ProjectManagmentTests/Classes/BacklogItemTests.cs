@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Utilities.Observable
+namespace ProjectManagmentTests.Classes
 {
-    public interface Observer
+    class BacklogItemTests
     {
-        void Update(string message, bool? status);
     }
 }
