@@ -10,7 +10,7 @@ namespace Utilities.Observable
     {
         public void Test()
         {
-            Notify("hey mate I failed");
+            Notify("hey mate I failed", null);
         }
     }
 }

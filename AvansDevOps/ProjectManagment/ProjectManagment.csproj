@@ -74,6 +74,14 @@
       <Project>{f62e66bf-638e-4de5-911d-e6bd9cb1653b}</Project>
       <Name>CMS</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PipeLine\PipeLine.csproj">
+      <Project>{7b806775-ea6c-4847-b76b-9509d3903863}</Project>
+      <Name>PipeLine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{bd781a60-7d63-407b-ae75-3e2deac76d01}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
