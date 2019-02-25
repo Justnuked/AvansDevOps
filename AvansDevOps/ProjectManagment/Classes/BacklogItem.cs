@@ -7,7 +7,7 @@ using ProjectManagment.Interfaces;
 
 namespace ProjectManagment.Classes
 {
-    class BacklogItem
+    public class BacklogItem
     {
         private string description;
         private HashSet<BacklogItem> subItems;
@@ -39,7 +39,14 @@ namespace ProjectManagment.Classes
         {
             if (subItems.Count > 0)
             {
-                CompleteCheck();
+                if (state.GetType().Equals("todo"))
+                {
+                    state.Progress();
+                }
+                else
+                {
+                    CompleteCheck();
+                }
             }
             else
             {

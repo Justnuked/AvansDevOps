@@ -16,6 +16,7 @@ namespace PipeLine.Classes
         private List<IPipeLineModule> modules;
         private string name;
         private PipeLineType type;
+        private IPipeLineModule failedModule;
 
         public Pipeline(string name, PipeLineType type)
         {
@@ -46,10 +47,13 @@ namespace PipeLine.Classes
             return modules;
         }
 
+        public IPipeLineModule GetFailedModule()
+        {
+            return this.failedModule;
+        }
+
         public void Execute()
         {
-            IPipeLineModule failedModule = null;
-
             foreach(IPipeLineModule m in modules){
                 m.Execute();
                 if (m.GetStatus() == Status.FAILED)
@@ -61,7 +65,7 @@ namespace PipeLine.Classes
 
             if (failedModule == null)
             {
-                Notify("Pipeline completed with succes", true);
+                Notify("Pipeline completed with success", true);
             }
             else
             {

@@ -7,7 +7,7 @@ using ProjectManagment.Classes;
 
 namespace ProjectManagment.Interfaces
 {
-    interface IState
+    public interface IState
     {
         void Progress();
         void SetBack();

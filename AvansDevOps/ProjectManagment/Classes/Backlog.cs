@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjectManagment.Classes
 {
-    class Backlog
+    public class Backlog
     {
         private List<BacklogItem> items;
         private Sprint s;

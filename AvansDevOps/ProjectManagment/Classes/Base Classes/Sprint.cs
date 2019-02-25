@@ -77,6 +77,11 @@ namespace ProjectManagment
             active = true;
         }
 
+        public void CheckTime()
+        {
+            CheckForTime_Elapsed(null, null);
+        }
+
         private void CheckForTime_Elapsed(object sender, ElapsedEventArgs e)
         {
             if (DateTime.Today == this.end)

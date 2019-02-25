@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "Storage\Storage.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{BD781A60-7D63-407B-AE75-3E2DEAC76D01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectManagmentTests", "ProjectManagmentTests\ProjectManagmentTests.csproj", "{A142DCE6-D7E0-4754-AD38-F49D30C6E48D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvansDevOpsTests", "ProjectManagmentTests\AvansDevOpsTests.csproj", "{A142DCE6-D7E0-4754-AD38-F49D30C6E48D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
