@@ -1,4 +1,5 @@
 ﻿using ProjectManagment.Classes;
+using CMS.Interfaces;
 using ProjectManagment;
 using System;
 using System.CodeDom;
@@ -16,6 +17,7 @@ namespace ProjectManagment
         private string name;
         private DateTime creationDate;
         private Forum forum;
+        private ISource source;
 
         private HashSet<Member> members;
         private List<Sprint> sprints;
