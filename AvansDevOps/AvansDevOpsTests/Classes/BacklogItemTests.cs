@@ -158,6 +158,7 @@ namespace ProjectManagment.Classes.Tests
             BacklogItem headItem = new BacklogItem("Desc");
             BacklogItem subItem = new BacklogItem("sub");
 
+
             backlog.AddBacklogItem(headItem);
             headItem.AddSubItem(subItem);
 
