@@ -20,8 +20,7 @@ namespace ProjectManagment
         public Sprint()
         {
             active = false;
-
-            backlog = new Backlog();
+            backlog = new Backlog(this);
         }
 
         public Sprint(DateTime start, DateTime end)

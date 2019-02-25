@@ -11,5 +11,7 @@ namespace ProjectManagment.Interfaces
     {
         void Progress();
         void SetBack();
+
+        string GetType();
     }
 }
