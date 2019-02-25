@@ -20,9 +20,9 @@ namespace Utilities.Observable
             observers.Remove(o);
         }
 
-        public void Notify(string message)
+        public void Notify(string message, bool? status)
         {
-            observers.ForEach(x => x.Update(message));
+            observers.ForEach(x => x.Update(message, status));
         }
     }
 }

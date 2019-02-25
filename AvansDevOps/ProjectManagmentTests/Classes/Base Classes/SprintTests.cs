@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Utilities.Observable
+namespace ProjectManagmentTests.Classes.Base_Classes
 {
-    public interface Observer
+    class SprintTests
     {
-        void Update(string message, bool? status);
     }
 }
