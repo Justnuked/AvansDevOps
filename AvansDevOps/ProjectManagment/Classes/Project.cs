@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjectManagment.Classes.Factories;
 
 namespace ProjectManagment
 {
@@ -19,6 +20,7 @@ namespace ProjectManagment
         private HashSet<Member> members;
         private List<Sprint> sprints;
         private Backlog backLog;
+        private SprintFactory factory;
 
         public Project(string name)
         {
@@ -28,27 +30,11 @@ namespace ProjectManagment
             forum = new Forum();
         }
 
-        public void CreateSprint (string type, DateTime start, DateTime end)
+        public void CreateSprint(string type, DateTime start, DateTime end)
         {
-            Sprint s = new Sprint();
-
-            switch (type)
-            {
-                case "product":
-                    s = new ProductSprint(start, end);
-                    break;
-
-                case "release":
-                    s = new ReleaseSprint(start, end);
-                    break;
-
-                default:
-                    // Error logic
-                    break;
-            }
-
-            sprints.Add(s);
+            sprints.Add(factory.CreateSprint(type, start, end));
         }
+
         public void AddMembers(HashSet<Member> members)
         {
             foreach (Member m in members)

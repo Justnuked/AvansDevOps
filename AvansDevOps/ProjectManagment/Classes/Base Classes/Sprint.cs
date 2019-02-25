@@ -32,10 +32,13 @@ namespace ProjectManagment
         public Sprint()
         {
             active = false;
+<<<<<<< HEAD
             t = new System.Timers.Timer(interval);
             t.Elapsed += new ElapsedEventHandler(CheckForTime_Elapsed);
             t.Enabled = true;
 
+=======
+>>>>>>> 08e4e5a8a41498aaa176af79b117a04f3da4c9f0
             backlog = new Backlog(this);
         }
 
