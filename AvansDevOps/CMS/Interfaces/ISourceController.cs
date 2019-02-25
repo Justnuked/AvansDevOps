@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CMS.Interfaces
 {
-    interface ISourceController
+    public interface ISourceController
     {
     }
 }

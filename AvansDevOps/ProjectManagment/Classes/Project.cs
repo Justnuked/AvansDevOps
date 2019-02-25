@@ -17,7 +17,7 @@ namespace ProjectManagment
         private string name;
         private DateTime creationDate;
         private Forum forum;
-        private ISource source;
+        private ISourceController source;
 
         private HashSet<Member> members;
         private List<Sprint> sprints;
