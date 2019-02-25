@@ -44,6 +44,7 @@
     <Compile Include="Classes\Backlog.cs" />
     <Compile Include="Classes\BacklogItem.cs" />
     <Compile Include="Classes\Comment.cs" />
+    <Compile Include="Classes\Factories\SprintFactory.cs" />
     <Compile Include="Classes\Forum.cs" />
     <Compile Include="Classes\Member.cs" />
     <Compile Include="Classes\ReportGenerators\PDFReportGenerator.cs" />
