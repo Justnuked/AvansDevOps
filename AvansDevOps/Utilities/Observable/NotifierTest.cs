@@ -15,7 +15,7 @@ namespace Utilities.Observable
             this.name = name;
         }
 
-        public void Update(string message)
+        public void Update(string message, bool? status)
         {
             Console.WriteLine(message);
         }

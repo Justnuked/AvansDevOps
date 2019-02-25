@@ -12,7 +12,7 @@ namespace PipeLine
     {
         static void Main(string[] args)
         {
-            Pipeline p = new Pipeline("test");
+            Pipeline p = new Pipeline("test", Pipeline.PipeLineType.DEVELOPMENT);
 
             p.AddModule(new BuildCSharp());
             p.AddModule(new TestCSharp());
