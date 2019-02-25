@@ -15,9 +15,8 @@ namespace ProjectManagment
 
         }
 
-        public void CreateThread(string name, string content, BacklogItem item)
+        public void AddThread(Thread t)
         {
-            Thread t = new Thread(name, content, item);
             threads.Add(t);
         }
     }

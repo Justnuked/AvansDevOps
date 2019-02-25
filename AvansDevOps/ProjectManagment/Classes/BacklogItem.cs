@@ -50,21 +50,18 @@ namespace ProjectManagment.Classes
         // Use this method when there are subitems present.
         public void CompleteCheck()
         {
-            if (subItems.Count > 0)
+            bool allDone = true;
+            foreach (BacklogItem b in subItems)
             {
-                bool allDone = true;
-                foreach (BacklogItem b in subItems)
+                if (!(b.state.GetType().Equals("done")))
                 {
-                    if (!(b.state.GetType().Equals("done")))
-                    {
-                        allDone = false;
-                    }
+                    allDone = false;
                 }
+            }
 
-                if (allDone)
-                {
-                    state = new StateDone(this);
-                }
+            if (allDone)
+            {
+                state = new StateDone(this);
             }
         }
     }
