@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectManagment.Interfaces
 {
-    interface IPlatform
+    public interface IPlatform
     {
     }
 }
