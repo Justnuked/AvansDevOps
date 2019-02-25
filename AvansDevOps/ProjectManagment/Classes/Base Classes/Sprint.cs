@@ -14,11 +14,14 @@ namespace ProjectManagment
 
         public bool active;
 
+        private Backlog backlog;
         private ReviewDocument document;
 
         public Sprint()
         {
             active = false;
+
+            backlog = new Backlog();
         }
 
         public Sprint(DateTime start, DateTime end)
